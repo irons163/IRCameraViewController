@@ -8,6 +8,25 @@
 
 #import "IRCameraSlideDownView.h"
 
+@interface IRCameraSlideDownView () <IRCameraSlideViewProtocol>
+
+@end
+
+
+
 @implementation IRCameraSlideDownView
+
+#pragma mark -
+#pragma mark - IRCameraSlideViewProtocol
+
+- (CGFloat)initialPositionWithView:(UIView *)view
+{
+    return CGRectGetHeight(view.frame)/2;
+}
+
+- (CGFloat)finalPosition
+{
+    return CGRectGetMaxY(self.frame);
+}
 
 @end

@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIImage_CameraFilters : NSObject
+@interface UIImage(CameraFilters)
+
+- (UIImage *)curveFilter;
+- (UIImage *)saturateImage:(CGFloat)saturation withContrast:(CGFloat)contrast;
+- (UIImage *)vignetteWithRadius:(CGFloat)radius intensity:(CGFloat)intensity;
 
 @end
 

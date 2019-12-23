@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/irons163/IRCameraViewController.git"
   spec.license      = "MIT"
   spec.author       = "irons163"
-  spec.platform     = :ios, "8.0"
+  spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/irons163/IRCameraViewController.git", :tag => spec.version.to_s }
-  spec.source_files  = "IRCameraViewController/Class/**/*.{h,m}"
+  spec.source_files  = "IRCameraViewController/Class/**/*.{h,m,xib}"
 end

@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IRTintedButton : NSObject
+@interface IRTintedButton : UIButton
+
+@property (nonatomic, strong) UIColor *customTintColorOverride;
+@property (nonatomic, assign) BOOL disableTint;
 
 @end
 

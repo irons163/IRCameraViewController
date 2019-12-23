@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IRCameraSlideView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IRCameraSlideUpView : NSObject
+@interface IRCameraSlideUpView : IRCameraSlideView
 
 @end
 

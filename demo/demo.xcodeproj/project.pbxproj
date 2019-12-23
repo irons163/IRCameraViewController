@@ -3,23 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A555E03F0AA7CE1BC744346 /* Pods_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFFD4877A4C25FF4641666 /* Pods_demo.framework */; };
 		8A4A49EB2334BDEC0078E1E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49EA2334BDEC0078E1E9 /* AppDelegate.m */; };
 		8A4A49EE2334BDEC0078E1E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49ED2334BDEC0078E1E9 /* ViewController.m */; };
 		8A4A49F12334BDEC0078E1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A49EF2334BDEC0078E1E9 /* Main.storyboard */; };
 		8A4A49F32334BDEF0078E1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A49F22334BDEF0078E1E9 /* Assets.xcassets */; };
 		8A4A49F62334BDEF0078E1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A49F42334BDEF0078E1E9 /* LaunchScreen.storyboard */; };
 		8A4A49F92334BDEF0078E1E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49F82334BDEF0078E1E9 /* main.m */; };
+		8C36CD889CC26343D471CD41 /* Pods_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFFD4877A4C25FF4641666 /* Pods_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A4A4A032334BFBA0078E1E9 /* PBXContainerItemProxy */ = {
+		8A5D60FE23A7309F00DD7353 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 8A4A49FF2334BFB90078E1E9 /* IRCameraViewController.xcodeproj */;
+			containerPortal = 8A5D60FA23A7309F00DD7353 /* IRCameraViewController.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8A4A49512334A5A30078E1E9;
 			remoteInfo = IRCameraViewController;
@@ -38,7 +38,9 @@
 		8A4A49F52334BDEF0078E1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A4A49F72334BDEF0078E1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4A49F82334BDEF0078E1E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A4A49FF2334BFB90078E1E9 /* IRCameraViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRCameraViewController.xcodeproj; path = ../IRCameraViewController.xcodeproj; sourceTree = "<group>"; };
+		8A5D60FA23A7309F00DD7353 /* IRCameraViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRCameraViewController.xcodeproj; path = ../IRCameraViewController.xcodeproj; sourceTree = "<group>"; };
+		8A69FA88237AC79B00026034 /* IRCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IRCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A69FA8C237AC80B00026034 /* IRCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IRCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACFFD4877A4C25FF4641666 /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13219C2718E7A99C1ABE408 /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo.debug.xcconfig"; path = "Target Support Files/Pods-demo/Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A555E03F0AA7CE1BC744346 /* Pods_demo.framework in Frameworks */,
+				8C36CD889CC26343D471CD41 /* Pods_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +60,8 @@
 		07F8119A829AE6EC45A502B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8A69FA8C237AC80B00026034 /* IRCameraViewController.framework */,
+				8A69FA88237AC79B00026034 /* IRCameraViewController.framework */,
 				AACFFD4877A4C25FF4641666 /* Pods_demo.framework */,
 			);
 			name = Frameworks;
@@ -69,14 +73,13 @@
 				F13219C2718E7A99C1ABE408 /* Pods-demo.debug.xcconfig */,
 				13A5F458EA86D6E976FBDA22 /* Pods-demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		8A4A49DD2334BDEC0078E1E9 = {
 			isa = PBXGroup;
 			children = (
-				8A4A49FF2334BFB90078E1E9 /* IRCameraViewController.xcodeproj */,
+				8A5D60FA23A7309F00DD7353 /* IRCameraViewController.xcodeproj */,
 				8A4A49E82334BDEC0078E1E9 /* demo */,
 				8A4A49E72334BDEC0078E1E9 /* Products */,
 				1E2F21BEC80451AFD4AD7675 /* Pods */,
@@ -108,10 +111,10 @@
 			path = demo;
 			sourceTree = "<group>";
 		};
-		8A4A4A002334BFB90078E1E9 /* Products */ = {
+		8A5D60FB23A7309F00DD7353 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A4A4A042334BFBA0078E1E9 /* IRCameraViewController.framework */,
+				8A5D60FF23A7309F00DD7353 /* IRCameraViewController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,7 +130,7 @@
 				8A4A49E22334BDEC0078E1E9 /* Sources */,
 				8A4A49E32334BDEC0078E1E9 /* Frameworks */,
 				8A4A49E42334BDEC0078E1E9 /* Resources */,
-				82BC572799D057BD117FCD68 /* [CP] Embed Pods Frameworks */,
+				8CB5EB11E70775A4BC5BE69E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,8 +168,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 8A4A4A002334BFB90078E1E9 /* Products */;
-					ProjectRef = 8A4A49FF2334BFB90078E1E9 /* IRCameraViewController.xcodeproj */;
+					ProductGroup = 8A5D60FB23A7309F00DD7353 /* Products */;
+					ProjectRef = 8A5D60FA23A7309F00DD7353 /* IRCameraViewController.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -177,11 +180,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		8A4A4A042334BFBA0078E1E9 /* IRCameraViewController.framework */ = {
+		8A5D60FF23A7309F00DD7353 /* IRCameraViewController.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = IRCameraViewController.framework;
-			remoteRef = 8A4A4A032334BFBA0078E1E9 /* PBXContainerItemProxy */;
+			remoteRef = 8A5D60FE23A7309F00DD7353 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -200,7 +203,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		82BC572799D057BD117FCD68 /* [CP] Embed Pods Frameworks */ = {
+		8CB5EB11E70775A4BC5BE69E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -378,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -392,7 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6VV6T753H;
+				DEVELOPMENT_TEAM = F7AP32ZTM5;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T6VV6T753H;
+				DEVELOPMENT_TEAM = F7AP32ZTM5;
 				INFOPLIST_FILE = demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

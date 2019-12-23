@@ -10,4 +10,15 @@
 
 @implementation IRAssetImageFile
 
+- (instancetype)initWithPath:(NSString *)path image:(UIImage *)image {
+    self = [self init];
+    
+    if (self) {
+        self.path = path;
+        self.image = image;
+    }
+    
+    return self;
+}
+
 @end

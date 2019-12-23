@@ -7,10 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IRCameraFocusView : NSObject
+#define IRCameraFocusSize 50
+
+@interface IRCameraFocusView : UIView
+
+- (void)startAnimation;
+- (void)stopAnimation;
 
 @end
 

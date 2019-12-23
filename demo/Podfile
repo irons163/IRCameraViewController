@@ -6,5 +6,5 @@ target 'demo' do
   use_frameworks!
 
   # Pods for demo
-  pod 'IRCameraViewController', :path => '..' 
+  pod 'IRCameraViewController', :path => '../IRCameraViewController.podspec'
 end

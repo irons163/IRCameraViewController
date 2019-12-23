@@ -7,10 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IRAssetImageFile : NSObject
+
+@property (strong, nonatomic) NSString *desc;
+@property (strong, nonatomic) UIImage *image;
+@property (strong, nonatomic) NSString *path;
+@property (strong, nonatomic) NSString *title;
+
+- (instancetype)initWithPath:(NSString *)path image:(UIImage *)image;
 
 @end
 

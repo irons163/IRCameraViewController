@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IRCameraGridView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IRCameraGrid : NSObject
+
++ (void)displayGridView:(IRCameraGridView *)gridView;
 
 @end
 

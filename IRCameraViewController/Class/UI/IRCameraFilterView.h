@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IRCameraFilterView : NSObject
+@interface IRCameraFilterView : UIView
+
+- (void)addToView:(UIView *)view aboveView:(UIView *)aboveView;
+- (void)removeFromSuperviewAnimated;
 
 @end
 

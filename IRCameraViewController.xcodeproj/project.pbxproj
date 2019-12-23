@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A4A49562334A5A30078E1E9 /* IRCameraViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49542334A5A30078E1E9 /* IRCameraViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A496D2334ABAA0078E1E9 /* IRTintedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A496B2334ABAA0078E1E9 /* IRTintedLabel.h */; };
 		8A4A496E2334ABAA0078E1E9 /* IRTintedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A496C2334ABAA0078E1E9 /* IRTintedLabel.m */; };
 		8A4A49712334ABCE0078E1E9 /* IRCameraFilterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A496F2334ABCE0078E1E9 /* IRCameraFilterView.h */; };
@@ -26,12 +25,12 @@
 		8A4A498A2334ACDD0078E1E9 /* IRCameraSlideUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49882334ACDD0078E1E9 /* IRCameraSlideUpView.m */; };
 		8A4A498D2334AD320078E1E9 /* UIImage+CameraFilters.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A498B2334AD320078E1E9 /* UIImage+CameraFilters.h */; };
 		8A4A498E2334AD320078E1E9 /* UIImage+CameraFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A498C2334AD320078E1E9 /* UIImage+CameraFilters.m */; };
-		8A4A49912334AD7E0078E1E9 /* IRAssetImageFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A498F2334AD7E0078E1E9 /* IRAssetImageFile.h */; };
+		8A4A49912334AD7E0078E1E9 /* IRAssetImageFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A498F2334AD7E0078E1E9 /* IRAssetImageFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A49922334AD7E0078E1E9 /* IRAssetImageFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49902334AD7E0078E1E9 /* IRAssetImageFile.m */; };
 		8A4A49982334B3190078E1E9 /* IRCameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A49952334B3190078E1E9 /* IRCameraViewController.xib */; };
-		8A4A499B2334B3BC0078E1E9 /* IRCameraNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49992334B3BC0078E1E9 /* IRCameraNavigationController.h */; };
+		8A4A499B2334B3BC0078E1E9 /* IRCameraNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49992334B3BC0078E1E9 /* IRCameraNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A499C2334B3BC0078E1E9 /* IRCameraNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A499A2334B3BC0078E1E9 /* IRCameraNavigationController.m */; };
-		8A4A49A72334B43A0078E1E9 /* IRCameraViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49A52334B43A0078E1E9 /* IRCameraViewController.h */; };
+		8A4A49A72334B43A0078E1E9 /* IRCameraViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49A52334B43A0078E1E9 /* IRCameraViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A49A82334B43A0078E1E9 /* IRCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49A62334B43A0078E1E9 /* IRCameraViewController.m */; };
 		8A4A49AC2334B5390078E1E9 /* IRCameraAuthorizationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49A92334B5390078E1E9 /* IRCameraAuthorizationViewController.h */; };
 		8A4A49AD2334B5390078E1E9 /* IRCameraAuthorizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49AA2334B5390078E1E9 /* IRCameraAuthorizationViewController.m */; };
@@ -39,7 +38,7 @@
 		8A4A49B22334B58F0078E1E9 /* IRPhotoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49AF2334B58F0078E1E9 /* IRPhotoViewController.h */; };
 		8A4A49B32334B58F0078E1E9 /* IRPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49B02334B58F0078E1E9 /* IRPhotoViewController.m */; };
 		8A4A49B42334B58F0078E1E9 /* IRPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A49B12334B58F0078E1E9 /* IRPhotoViewController.xib */; };
-		8A4A49B72334B5D20078E1E9 /* IRAssetsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49B52334B5D20078E1E9 /* IRAssetsLibrary.h */; };
+		8A4A49B72334B5D20078E1E9 /* IRAssetsLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49B52334B5D20078E1E9 /* IRAssetsLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A49B82334B5D20078E1E9 /* IRAssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49B62334B5D20078E1E9 /* IRAssetsLibrary.m */; };
 		8A4A49BB2334B5F40078E1E9 /* IRCameraFlash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49B92334B5F40078E1E9 /* IRCameraFlash.h */; };
 		8A4A49BC2334B5F40078E1E9 /* IRCameraFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49BA2334B5F40078E1E9 /* IRCameraFlash.m */; };
@@ -55,15 +54,20 @@
 		8A4A49D02334B88B0078E1E9 /* IRCameraShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49CE2334B88B0078E1E9 /* IRCameraShot.m */; };
 		8A4A49D32334B8A60078E1E9 /* IRCameraToggle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49D12334B8A60078E1E9 /* IRCameraToggle.h */; };
 		8A4A49D42334B8A60078E1E9 /* IRCameraToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49D22334B8A60078E1E9 /* IRCameraToggle.m */; };
-		8A4A49D72334BA850078E1E9 /* IRCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49D52334BA850078E1E9 /* IRCamera.h */; };
+		8A4A49D72334BA850078E1E9 /* IRCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49D52334BA850078E1E9 /* IRCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A49D82334BA850078E1E9 /* IRCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49D62334BA850078E1E9 /* IRCamera.m */; };
-		8A4A49DB2334BBA10078E1E9 /* IRCameraColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49D92334BBA10078E1E9 /* IRCameraColor.h */; };
+		8A4A49DB2334BBA10078E1E9 /* IRCameraColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A4A49D92334BBA10078E1E9 /* IRCameraColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A4A49DC2334BBA10078E1E9 /* IRCameraColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49DA2334BBA10078E1E9 /* IRCameraColor.m */; };
+		8A5D612723AB140200DD7353 /* IRCameraViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D612623AB140200DD7353 /* IRCameraViewController.bundle */; };
+		8A5D612923AB214700DD7353 /* IRCameraViewController.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A5D612823AB214700DD7353 /* IRCameraViewController.xcassets */; };
+		8A5D613023AB27B600DD7353 /* UIImage+Bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5D612C23AB27B500DD7353 /* UIImage+Bundle.h */; };
+		8A5D613123AB27B600DD7353 /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D612D23AB27B500DD7353 /* UIImage+Bundle.m */; };
+		8A5D613223AB27B600DD7353 /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A5D612E23AB27B500DD7353 /* Utility.h */; };
+		8A5D613323AB27B600DD7353 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A5D612F23AB27B600DD7353 /* Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8A4A49512334A5A30078E1E9 /* IRCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IRCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A4A49542334A5A30078E1E9 /* IRCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRCameraViewController.h; sourceTree = "<group>"; };
 		8A4A49552334A5A30078E1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4A496B2334ABAA0078E1E9 /* IRTintedLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRTintedLabel.h; sourceTree = "<group>"; };
 		8A4A496C2334ABAA0078E1E9 /* IRTintedLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRTintedLabel.m; sourceTree = "<group>"; };
@@ -116,6 +120,12 @@
 		8A4A49D62334BA850078E1E9 /* IRCamera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRCamera.m; sourceTree = "<group>"; };
 		8A4A49D92334BBA10078E1E9 /* IRCameraColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRCameraColor.h; sourceTree = "<group>"; };
 		8A4A49DA2334BBA10078E1E9 /* IRCameraColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IRCameraColor.m; sourceTree = "<group>"; };
+		8A5D612623AB140200DD7353 /* IRCameraViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IRCameraViewController.bundle; sourceTree = "<group>"; };
+		8A5D612823AB214700DD7353 /* IRCameraViewController.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = IRCameraViewController.xcassets; sourceTree = "<group>"; };
+		8A5D612C23AB27B500DD7353 /* UIImage+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bundle.h"; sourceTree = "<group>"; };
+		8A5D612D23AB27B500DD7353 /* UIImage+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bundle.m"; sourceTree = "<group>"; };
+		8A5D612E23AB27B500DD7353 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		8A5D612F23AB27B600DD7353 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,8 +158,9 @@
 		8A4A49532334A5A30078E1E9 /* IRCameraViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8A4A49542334A5A30078E1E9 /* IRCameraViewController.h */,
 				8A4A49552334A5A30078E1E9 /* Info.plist */,
+				8A5D612823AB214700DD7353 /* IRCameraViewController.xcassets */,
+				8A5D612623AB140200DD7353 /* IRCameraViewController.bundle */,
 				8A4A495C2334A7550078E1E9 /* Class */,
 			);
 			path = IRCameraViewController;
@@ -158,6 +169,7 @@
 		8A4A495C2334A7550078E1E9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				8A5D612A23AB248400DD7353 /* Utility */,
 				8A4A496A2334AB7C0078E1E9 /* Control */,
 				8A4A49692334AB720078E1E9 /* Helper */,
 				8A4A49682334AB6C0078E1E9 /* VIew */,
@@ -261,6 +273,17 @@
 			path = Control;
 			sourceTree = "<group>";
 		};
+		8A5D612A23AB248400DD7353 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8A5D612C23AB27B500DD7353 /* UIImage+Bundle.h */,
+				8A5D612D23AB27B500DD7353 /* UIImage+Bundle.m */,
+				8A5D612E23AB27B500DD7353 /* Utility.h */,
+				8A5D612F23AB27B600DD7353 /* Utility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -268,6 +291,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4A49A72334B43A0078E1E9 /* IRCameraViewController.h in Headers */,
 				8A4A49C32334B81E0078E1E9 /* IRAlbum.h in Headers */,
 				8A4A49DB2334BBA10078E1E9 /* IRCameraColor.h in Headers */,
 				8A4A49AC2334B5390078E1E9 /* IRCameraAuthorizationViewController.h in Headers */,
@@ -282,16 +306,16 @@
 				8A4A497D2334AC2B0078E1E9 /* IRTintedButton.h in Headers */,
 				8A4A49852334ACB90078E1E9 /* IRCameraSlideDownView.h in Headers */,
 				8A4A49CB2334B8720078E1E9 /* IRCameraFocus.h in Headers */,
+				8A5D613023AB27B600DD7353 /* UIImage+Bundle.h in Headers */,
 				8A4A49B22334B58F0078E1E9 /* IRPhotoViewController.h in Headers */,
 				8A4A49B72334B5D20078E1E9 /* IRAssetsLibrary.h in Headers */,
 				8A4A49C72334B8540078E1E9 /* IRCameraGrid.h in Headers */,
 				8A4A49CF2334B88B0078E1E9 /* IRCameraShot.h in Headers */,
 				8A4A49D32334B8A60078E1E9 /* IRCameraToggle.h in Headers */,
-				8A4A49562334A5A30078E1E9 /* IRCameraViewController.h in Headers */,
+				8A5D613223AB27B600DD7353 /* Utility.h in Headers */,
 				8A4A49792334ABFF0078E1E9 /* IRCameraSlideView.h in Headers */,
 				8A4A49D72334BA850078E1E9 /* IRCamera.h in Headers */,
 				8A4A498D2334AD320078E1E9 /* UIImage+CameraFilters.h in Headers */,
-				8A4A49A72334B43A0078E1E9 /* IRCameraViewController.h in Headers */,
 				8A4A499B2334B3BC0078E1E9 /* IRCameraNavigationController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +377,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5D612923AB214700DD7353 /* IRCameraViewController.xcassets in Resources */,
+				8A5D612723AB140200DD7353 /* IRCameraViewController.bundle in Resources */,
 				8A4A49AE2334B5390078E1E9 /* IRCameraAuthorizationViewController.xib in Resources */,
 				8A4A49982334B3190078E1E9 /* IRCameraViewController.xib in Resources */,
 				8A4A49B42334B58F0078E1E9 /* IRPhotoViewController.xib in Resources */,
@@ -366,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A5D613123AB27B600DD7353 /* UIImage+Bundle.m in Sources */,
 				8A4A49722334ABCE0078E1E9 /* IRCameraFilterView.m in Sources */,
 				8A4A49C02334B7F90078E1E9 /* IRCameraFunctions.m in Sources */,
 				8A4A499C2334B3BC0078E1E9 /* IRCameraNavigationController.m in Sources */,
@@ -377,6 +404,7 @@
 				8A4A49A82334B43A0078E1E9 /* IRCameraViewController.m in Sources */,
 				8A4A49762334ABE60078E1E9 /* IRCameraGridView.m in Sources */,
 				8A4A49D42334B8A60078E1E9 /* IRCameraToggle.m in Sources */,
+				8A5D613323AB27B600DD7353 /* Utility.m in Sources */,
 				8A4A497A2334ABFF0078E1E9 /* IRCameraSlideView.m in Sources */,
 				8A4A49822334AC5D0078E1E9 /* IRCameraFocusView.m in Sources */,
 				8A4A496E2334ABAA0078E1E9 /* IRTintedLabel.m in Sources */,
@@ -448,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -504,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -8,11 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "IRAlbum.h"
-#import "IRAssetsLibrary.h"
-#import "IRCamera.h"
-#import "IRCameraColor.h"
-#import "IRCameraNavigationController.h"
+
+FOUNDATION_EXPORT double IRCameraViewControllerVersionNumber;
+FOUNDATION_EXPORT const unsigned char IRCameraViewControllerVersionString[];
+
+//#import <IRCameraViewController/IRAlbum.h>
+#import <IRCameraViewController/IRAssetsLibrary.h>
+#import <IRCameraViewController/IRCamera.h>
+#import <IRCameraViewController/IRCameraColor.h>
+#import <IRCameraViewController/IRCameraNavigationController.h>
+#import <IRCameraViewController/IRAssetImageFile.h>
+//#import "IRAssetsLibrary.h"
+//#import "IRCamera.h"
+//#import "IRCameraColor.h"
+//#import "IRCameraNavigationController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface IRCameraViewController : NSObject
+@interface IRCameraViewController : UIViewController
 
 @property (weak) id<IRCameraDelegate> delegate;
 

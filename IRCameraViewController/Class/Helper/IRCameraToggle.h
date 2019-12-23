@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface IRCameraToggle : NSObject
+
++ (void)toogleWithCaptureSession:(AVCaptureSession *)session;
 
 @end
 

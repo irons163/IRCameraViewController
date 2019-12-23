@@ -2,15 +2,15 @@ PODS:
   - IRCameraViewController (1.0.0)
 
 DEPENDENCIES:
-  - IRCameraViewController (from `..`)
+  - IRCameraViewController (from `../IRCameraViewController.podspec`)
 
 EXTERNAL SOURCES:
   IRCameraViewController:
-    :path: ".."
+    :path: "../IRCameraViewController.podspec"
 
 SPEC CHECKSUMS:
-  IRCameraViewController: 4c3246ee32d54de801baf859f837800bdaab91da
+  IRCameraViewController: ed90b2c196e89b74f898a6911879907c358c3fa2
 
-PODFILE CHECKSUM: a8e92116da92a313b781af8ddab781cbe7a010d3
+PODFILE CHECKSUM: ba560c7c258dc487f8b2433ea63c86a30450c008
 
 COCOAPODS: 1.8.0.beta.2

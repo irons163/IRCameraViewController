@@ -34,6 +34,8 @@
 #import "IRCameraSlideView.h"
 #import "IRTintedButton.h"
 #import "IRTintedLabel.h"
+#import "UIImage+Bundle.h"
+#import "Utility.h"
 
 FOUNDATION_EXPORT double IRCameraViewControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char IRCameraViewControllerVersionString[];

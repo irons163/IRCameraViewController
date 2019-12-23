@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface IRCameraColor : NSObject
+@interface IRCameraColor : UIColor
+
++ (void)setTintColor:(UIColor *)tintColor;
++ (UIColor *)tintColor;
 
 @end
 
