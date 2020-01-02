@@ -24,10 +24,11 @@
 - Copy this project into your own project.
 - Add the .xcodeproj into you  project and link it as embed framework.
 #### Options
-- You can remove the `ScreenShots` folder.
+- You can remove the `demo` and `ScreenShots` folder.
 
 ### Cocoapods
-- Not support yet.
+- Add `pod 'IRCameraViewController'`  in the `Podfile`
+- `pod install`
 
 ## Usage
 
