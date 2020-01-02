@@ -233,3 +233,6 @@ Custom image filters(You can see how GPUImage work in the demo project):
 |![Default filters](./ScreenShots/demo5.png)|![Album](./ScreenShots/demo6.png)| 
 | Custom filters | Update display view |
 |![Custom filters](./ScreenShots/demo7.png)|![Update display view](./ScreenShots/demo8.png)| 
+
+## Copyright
+##### This project is inspired from [TGCameraViewController](https://github.com/tdginternet/TGCameraViewController).
