@@ -1,16 +1,27 @@
 PODS:
+  - GPUImage (0.1.7)
   - IRCameraViewController (1.0.0)
 
 DEPENDENCIES:
+  - GPUImage (from `https://github.com/BradLarson/GPUImage.git`, branch `master`)
   - IRCameraViewController (from `../IRCameraViewController.podspec`)
 
 EXTERNAL SOURCES:
+  GPUImage:
+    :branch: master
+    :git: https://github.com/BradLarson/GPUImage.git
   IRCameraViewController:
     :path: "../IRCameraViewController.podspec"
 
+CHECKOUT OPTIONS:
+  GPUImage:
+    :commit: 167b0389bc6e9dc4bb0121550f91d8d5d6412c53
+    :git: https://github.com/BradLarson/GPUImage.git
+
 SPEC CHECKSUMS:
+  GPUImage: bd7e201b9aa91e85f401ed7a6d9867a07a404693
   IRCameraViewController: ed90b2c196e89b74f898a6911879907c358c3fa2
 
-PODFILE CHECKSUM: ba560c7c258dc487f8b2433ea63c86a30450c008
+PODFILE CHECKSUM: 8e030f0433db9b62d0b5f1625b9a44d668b1a50d
 
 COCOAPODS: 1.8.0.beta.2

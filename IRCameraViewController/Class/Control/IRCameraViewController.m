@@ -10,7 +10,6 @@
 #import "IRCameraSlideView.h"
 #import "IRTintedButton.h"
 #import "IRPhotoViewController.h"
-//#import "InventoryPhotoViewController.h"
 #import "IRAlbum.h"
 #import "UIImage+Bundle.h"
 
@@ -52,8 +51,6 @@
 
 @end
 
-
-
 @implementation IRCameraViewController
 
 - (instancetype)init
@@ -64,10 +61,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-//    if (CGRectGetHeight([[UIScreen mainScreen] bounds]) <= 480) {
-//        _topViewHeight.constant = 0;
-//    }
     
     NSArray *devices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
     if (devices.count > 1) {
@@ -88,7 +81,6 @@
     
     if ([[IRCamera getOption:kIRCameraOptionUseOriginalAspect] boolValue] == YES) {
         _bottomViewHeightFixed.active = YES;
-//        _captureViewAspect.active = NO;
     } else {
         _bottomViewHeightFixed.active = NO;
     }
@@ -148,13 +140,8 @@
     _separatorView.hidden = YES;
     
     [IRCameraSlideView hideSlideUpView:_slideUpView slideDownView:_slideDownView atView:_captureView completion:^{
-        //        _topLeftView.hidden =
-        //        _topRightView.hidden =
-        //        _bottomLeftView.hidden =
-        //        _bottomRightView.hidden = NO;
         
         _actionsView.hidden = NO;
-        
         _gridButton.enabled =
         _toggleButton.enabled =
         _shotButton.enabled =
@@ -194,38 +181,32 @@
 {
     UIImage *photo = [IRAlbum imageWithMediaInfo:info];
     
-    //    [picker.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-    
-    //    [self.delegate cameraDidSelectAlbumPhoto:photo Note:nil];
-    
     BOOL customizePhotoProcessingView = NO;
     if ([_delegate respondsToSelector:@selector(customizePhotoProcessingView)]) {
         customizePhotoProcessingView = [_delegate customizePhotoProcessingView];
     }
     
     if (!customizePhotoProcessingView) {
-//            InventoryPhotoViewController *viewController = [InventoryPhotoViewController newWithDelegate:_delegate photo:photo];
-//            [self.navigationController pushViewController:viewController animated:YES];
-//                    [self.delegate cameraDidTakePhoto:photo Note:nil];
         IRPhotoViewController *viewController = [IRPhotoViewController newWithDelegate:_delegate photo:photo];
         [viewController setAlbumPhoto:YES];
-        [self.navigationController pushViewController:viewController animated:YES];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.navigationController pushViewController:viewController animated:YES];
+        });
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [picker dismissViewControllerAnimated:YES completion:nil];
+        });
+        
     } else {
-        if ([_delegate respondsToSelector:@selector(cameraDidTakePhoto:Note:)]) {
-            [_delegate cameraDidSelectAlbumPhoto:photo Note:nil];
+        if ([_delegate respondsToSelector:@selector(cameraDidTakePhoto:)]) {
+            [_delegate cameraDidSelectAlbumPhoto:photo];
         }
     }
-    
-//    InventoryPhotoViewController *viewController = [InventoryPhotoViewController newWithDelegate:_delegate photo:photo];
-//    [viewController setAlbumPhoto:YES];
-//    [self.navigationController pushViewController:viewController animated:NO];
-
-//    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark -
@@ -285,14 +266,11 @@
         }
         
         if (!customizePhotoProcessingView) {
-            //            InventoryPhotoViewController *viewController = [InventoryPhotoViewController newWithDelegate:_delegate photo:photo];
-            //            [self.navigationController pushViewController:viewController animated:YES];
-            //                    [self.delegate cameraDidTakePhoto:photo Note:nil];
             IRPhotoViewController *viewController = [IRPhotoViewController newWithDelegate:self->_delegate photo:photo];
             [self.navigationController pushViewController:viewController animated:YES];
         } else {
-            if ([self->_delegate respondsToSelector:@selector(cameraDidTakePhoto:Note:)]) {
-                [self->_delegate cameraDidTakePhoto:photo Note:nil];
+            if ([self->_delegate respondsToSelector:@selector(cameraDidTakePhoto:)]) {
+                [self->_delegate cameraDidTakePhoto:photo];
             }
         }
     });

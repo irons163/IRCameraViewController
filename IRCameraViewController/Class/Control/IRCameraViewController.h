@@ -12,16 +12,11 @@
 FOUNDATION_EXPORT double IRCameraViewControllerVersionNumber;
 FOUNDATION_EXPORT const unsigned char IRCameraViewControllerVersionString[];
 
-//#import <IRCameraViewController/IRAlbum.h>
 #import <IRCameraViewController/IRAssetsLibrary.h>
 #import <IRCameraViewController/IRCamera.h>
 #import <IRCameraViewController/IRCameraColor.h>
 #import <IRCameraViewController/IRCameraNavigationController.h>
 #import <IRCameraViewController/IRAssetImageFile.h>
-//#import "IRAssetsLibrary.h"
-//#import "IRCamera.h"
-//#import "IRCameraColor.h"
-//#import "IRCameraNavigationController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

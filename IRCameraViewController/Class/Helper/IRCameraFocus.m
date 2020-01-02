@@ -66,10 +66,7 @@
 
 + (void)showFocusView:(UIView *)focusView withTouchPoint:(CGPoint)touchPoint andDevice:(AVCaptureDevice *)device
 {
-    
-    //
     // add focus view animated
-    //
     IRCameraFocusView *cameraFocusView = [[IRCameraFocusView alloc] initWithFrame:CGRectMake(0, 0, IRCameraFocusSize, IRCameraFocusSize)];
     cameraFocusView.center = touchPoint;
     [focusView addSubview:cameraFocusView];
@@ -83,9 +80,7 @@
                [device isAdjustingWhiteBalance]);
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            //
             // remove focus view and focus subview animated
-            //
             [cameraFocusView stopAnimation];
         });
     });

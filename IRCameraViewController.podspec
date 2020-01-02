@@ -9,4 +9,5 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.source       = { :git => "https://github.com/irons163/IRCameraViewController.git", :tag => spec.version.to_s }
   spec.source_files  = "IRCameraViewController/Class/**/*.{h,m,xib}"
+  spec.resources = ["IRCameraViewController/**/*.xcassets", "IRCameraViewController/**/*.bundle"]
 end

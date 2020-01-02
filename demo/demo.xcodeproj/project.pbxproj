@@ -13,6 +13,7 @@
 		8A4A49F32334BDEF0078E1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A49F22334BDEF0078E1E9 /* Assets.xcassets */; };
 		8A4A49F62334BDEF0078E1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4A49F42334BDEF0078E1E9 /* LaunchScreen.storyboard */; };
 		8A4A49F92334BDEF0078E1E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4A49F82334BDEF0078E1E9 /* main.m */; };
+		8A53CF8323B1A29E00B807D4 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A53CF8223B1A29E00B807D4 /* FilterViewController.m */; };
 		8C36CD889CC26343D471CD41 /* Pods_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACFFD4877A4C25FF4641666 /* Pods_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 		8A4A49F52334BDEF0078E1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A4A49F72334BDEF0078E1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A4A49F82334BDEF0078E1E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A53CF8123B1A29E00B807D4 /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		8A53CF8223B1A29E00B807D4 /* FilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		8A5D60FA23A7309F00DD7353 /* IRCameraViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IRCameraViewController.xcodeproj; path = ../IRCameraViewController.xcodeproj; sourceTree = "<group>"; };
 		8A69FA88237AC79B00026034 /* IRCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IRCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A69FA8C237AC80B00026034 /* IRCameraViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IRCameraViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +105,8 @@
 				8A4A49EA2334BDEC0078E1E9 /* AppDelegate.m */,
 				8A4A49EC2334BDEC0078E1E9 /* ViewController.h */,
 				8A4A49ED2334BDEC0078E1E9 /* ViewController.m */,
+				8A53CF8123B1A29E00B807D4 /* FilterViewController.h */,
+				8A53CF8223B1A29E00B807D4 /* FilterViewController.m */,
 				8A4A49EF2334BDEC0078E1E9 /* Main.storyboard */,
 				8A4A49F22334BDEF0078E1E9 /* Assets.xcassets */,
 				8A4A49F42334BDEF0078E1E9 /* LaunchScreen.storyboard */,
@@ -251,6 +256,7 @@
 			files = (
 				8A4A49EE2334BDEC0078E1E9 /* ViewController.m in Sources */,
 				8A4A49F92334BDEF0078E1E9 /* main.m in Sources */,
+				8A53CF8323B1A29E00B807D4 /* FilterViewController.m in Sources */,
 				8A4A49EB2334BDEC0078E1E9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

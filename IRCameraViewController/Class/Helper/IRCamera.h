@@ -22,8 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol IRCameraDelegate <NSObject>
 
 - (void)cameraDidCancel;
-- (void)cameraDidSelectAlbumPhoto:(UIImage *)image Note:(NSString*)note;
-- (void)cameraDidTakePhoto:(UIImage *)image Note:(NSString*)note;
+- (void)cameraDidSelectAlbumPhoto:(UIImage *)image;
+- (void)cameraDidTakePhoto:(UIImage *)image;
 
 @optional
 

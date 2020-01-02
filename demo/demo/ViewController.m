@@ -6,11 +6,13 @@
 //  Copyright © 2019 Phil. All rights reserved.
 //
 
-#import "ViewController.h"0
+#import "ViewController.h"
+#import "FilterViewController.h"
 #import <IRCameraViewController/IRCameraViewController.h>
 
 @interface ViewController ()<IRCameraDelegate> {
     BOOL useCustomizePhotoProcessingView;
+    FilterViewController *vc;
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
@@ -25,24 +27,34 @@
 //    [self addNewPhotoButtonClick:nil];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    if(vc.image) {
+        self.imageView.image = vc.image;
+    }
+}
+
 - (IBAction)addNewPhotoButtonClick:(id)sender {
+    /*
     // set custom tint color
-//    [IRCameraColor setTintColor: [UIColor whiteColor]];
+    [IRCameraColor setTintColor: [UIColor whiteColor]];
     
     // save image to album
-    //[TGCamera setOption:kTGCameraOptionSaveImageToAlbum value:@YES];
+    [IRCamera setOption:kIRCameraOptionSaveImageToAlbum value:@YES];
     
     // use the original image aspect instead of square
-    //[TGCamera setOption:kTGCameraOptionUseOriginalAspect value:@YES];
+    [IRCamera setOption:kIRCameraOptionUseOriginalAspect value:@YES];
     
     // hide switch camera button
-    //[TGCamera setOption:kTGCameraOptionHiddenToggleButton value:@YES];
+    [IRCamera setOption:kIRCameraOptionHiddenToggleButton value:@YES];
     
     // hide album button
-    //[TGCamera setOption:kTGCameraOptionHiddenAlbumButton value:@YES;
+    [IRCamera setOption:kIRCameraOptionHiddenAlbumButton value:@YES];
     
     // hide filter button
-//    [IRCamera setOption:kIRCameraOptionHiddenFilterButton value:@YES];
+    [IRCamera setOption:kIRCameraOptionHiddenFilterButton value:@YES];
+    */
     
     useCustomizePhotoProcessingView = NO;
     IRCameraNavigationController *cameraViewController = [IRCameraNavigationController newWithCameraDelegate:self];
@@ -62,41 +74,36 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)cameraDidTakePhoto:(UIImage *)image Note:(NSString *)note
-{
-//    [self presentPhotoEditPageWithImage:image];
-    self.imageView.image = image;
+- (void)dealWithImage:(UIImage * _Nonnull)image {
+    if (!useCustomizePhotoProcessingView) {
+        vc = nil;
+        self.imageView.image = image;
+        [self dismiss];
+        return;
+    }
+    
+    vc = [self.storyboard instantiateViewControllerWithIdentifier:@"FilterViewController"];
+    vc.image = image;
     [self dismiss];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)cameraDidSelectAlbumPhoto:(UIImage *)image Note:(NSString *)note
+- (void)cameraDidTakePhoto:(UIImage *)image
 {
-//    [self presentPhotoEditPageWithImage:image];
-    self.imageView.image = image;
-    [self dismiss];
+    [self dealWithImage:image];
+}
+
+- (void)cameraDidSelectAlbumPhoto:(UIImage *)image
+{
+    [self dealWithImage:image];
 }
 
 - (void)dismiss {
     if(self.navigationController)
-        [(UINavigationController *)self.navigationController.topViewController.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+        [(UINavigationController *)self.navigationController dismissViewControllerAnimated:YES completion:nil];
     else
-        [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:nil];
 }
-/*
-- (void)presentPhotoEditPageWithImage:(UIImage *)image {
-//    if(self.navigationController)
-//        [self.navigationController popViewControllerAnimated:YES];
-//    else
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//    [self reloadInfo];
-    InventoryPhotoViewController *viewController = [InventoryPhotoViewController newWithDelegate:self photo:image];
-    [viewController setAlbumPhoto:YES];
-    if(self.navigationController)
-        [self.navigationController pushViewController:viewController animated:NO];
-    else
-        [self presentViewController:viewController animated:NO completion:nil];
-}
-*/
 
 - (BOOL)customizePhotoProcessingView {
     return useCustomizePhotoProcessingView;

@@ -117,13 +117,13 @@ static NSString* const kIRCacheVignetteKey = @"IRCacheVignetteKey";
         [_delegate cameraWillTakePhoto];
     }
     
-    if ([_delegate respondsToSelector:@selector(cameraDidTakePhoto:Note:)]) {
+    if ([_delegate respondsToSelector:@selector(cameraDidTakePhoto:)]) {
         _photo = _photoView.image;
         
         if (_albumPhoto) {
-            [_delegate cameraDidSelectAlbumPhoto:_photo Note:nil];
+            [_delegate cameraDidSelectAlbumPhoto:_photo];
         } else {
-            [_delegate cameraDidTakePhoto:_photo Note:nil];
+            [_delegate cameraDidTakePhoto:_photo];
         }
         
         ALAuthorizationStatus status = [ALAssetsLibrary authorizationStatus];
